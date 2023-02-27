@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Auto php sang html
+
+RewriteRule	"^thanh-vien-(.*).html$" "/item.php?act=item&id=$1"
+
+RewriteRule	"^item.html" "/item.php"
+RewriteRule "thanh-vien.html" "member.php"
+RewriteRule "chiem-dong.html" "cd.php"
+RewriteRule "kho-cong-hien.html" "/item.php?act=allitem"
+
+
+RewriteRule "index.html" "index.php"
+RewriteRule "dang-ky.html" "reg.php"
+RewriteRule "dang-nhap.html" "login.php"
+RewriteRule "login" "login.php"
+RewriteRule "logout.html" "logout.php"
